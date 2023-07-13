@@ -10,18 +10,18 @@ export default {
 </script>
 
 <template>
-  <div class="head">
-    <!-- <RouterLink to="/"> <Logo /></RouterLink> -->
-    <Logo />
+  <Logo />
+  <!-- <div class="head"> -->
+  <!-- <RouterLink to="/"> <Logo /></RouterLink> -->
 
-    <!-- <nav>
+  <!-- <nav>
       <div class="box">
         <RouterLink to="/post-product">PRODUCTOS</RouterLink>
         <RouterLink to="/about">ABOUT</RouterLink>
         <RouterLink to="/login">INGRESAR</RouterLink>
       </div>
     </nav> -->
-  </div>
+  <!-- </div> -->
   <div class="content">
     <RouterView />
   </div>
