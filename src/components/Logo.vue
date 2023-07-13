@@ -8,8 +8,7 @@
 .image-container {
   display: flex;
   justify-content: center;
-  width: 99px;
-  height: 99px;
+  width: 200px;
   align-items: center;
 }
 .image-container img {

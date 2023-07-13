@@ -11,15 +11,16 @@ export default {
 
 <template>
   <div class="head">
-    <RouterLink to="/"> <Logo /></RouterLink>
+    <!-- <RouterLink to="/"> <Logo /></RouterLink> -->
+    <Logo />
 
-    <nav>
+    <!-- <nav>
       <div class="box">
         <RouterLink to="/post-product">PRODUCTOS</RouterLink>
         <RouterLink to="/about">ABOUT</RouterLink>
         <RouterLink to="/login">INGRESAR</RouterLink>
       </div>
-    </nav>
+    </nav> -->
   </div>
   <div class="content">
     <RouterView />
@@ -30,9 +31,11 @@ export default {
 .head {
   display: flex;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   top: 0;
   background-color: white;
-  width: 100vw;
+  width: 100%;
 }
 .content {
   margin-top: 100px;
