@@ -38,7 +38,7 @@ export default {
   width: 100%;
 }
 .content {
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .box {
