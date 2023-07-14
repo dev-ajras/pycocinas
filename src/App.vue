@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <div class="head">
+  <!-- <div class="head">
     <RouterLink to="/"> <Logo /></RouterLink>
 
     <nav>
@@ -19,7 +19,7 @@ export default {
         <RouterLink to="/login">INGRESAR</RouterLink>
       </div>
     </nav>
-  </div>
+  </div> -->
   <div class="content">
     <RouterView />
   </div>
@@ -34,7 +34,6 @@ export default {
   width: 100vw;
 }
 .content {
-  margin-top: 100px;
 }
 .box {
   width: 100%;
