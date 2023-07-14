@@ -1,7 +1,6 @@
 <script lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import Logo from "./components/Logo.vue";
-
 export default {
   components: {
     Logo,
@@ -10,18 +9,17 @@ export default {
 </script>
 
 <template>
-  <Logo />
-  <!-- <div class="head"> -->
-  <!-- <RouterLink to="/"> <Logo /></RouterLink> -->
+  <div class="head">
+    <RouterLink to="/"> <Logo /></RouterLink>
 
-  <!-- <nav>
+    <nav>
       <div class="box">
         <RouterLink to="/post-product">PRODUCTOS</RouterLink>
         <RouterLink to="/about">ABOUT</RouterLink>
         <RouterLink to="/login">INGRESAR</RouterLink>
       </div>
-    </nav> -->
-  <!-- </div> -->
+    </nav>
+  </div>
   <div class="content">
     <RouterView />
   </div>
@@ -31,23 +29,19 @@ export default {
 .head {
   display: flex;
   position: fixed;
-  justify-content: center;
-  align-items: center;
   top: 0;
   background-color: white;
-  width: 100%;
+  width: 100vw;
 }
 .content {
-  /* margin-top: 100px; */
+  margin-top: 100px;
 }
-
 .box {
   width: 100%;
   background-color: #0cb6e0;
   height: 27px;
   border: none;
 }
-
 nav {
   display: flex;
   justify-content: center;
@@ -56,15 +50,12 @@ nav {
   font-size: 12px;
   text-align: center;
 }
-
 nav a.router-link-exact-active {
   color: black;
 }
-
 nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
-
 nav a {
   display: inline-block;
   margin: 3px 10px 0 10px;
@@ -74,28 +65,23 @@ nav a {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border-left: 1px solid var(--color-border);
 }
-
 nav a:first-of-type {
   border: 0;
 }
-
 @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
   .logo {
     margin: 0 2rem 0 0;
   }
-
   header .wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
   }
-
   nav {
     text-align: left;
     margin-left: -1rem;
